@@ -34,7 +34,7 @@ function encryptDecrypt(str, shift) {
     return newText;
 }
 
-function autoEncrypt(string) {
+function autoDecrypt(string) {
     let lettersAmount = {};
     let maxIndex = 0;
     let maxLetter = '';
@@ -65,5 +65,5 @@ decryptBtn.addEventListener('click', () => {
 });
 
 autoDecryptBtn.addEventListener('click', () => {
-    autoResult.innerHTML = autoEncrypt(autoText.value);
+    autoResult.innerHTML = autoDecrypt(autoText.value);
 })
