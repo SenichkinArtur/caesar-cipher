@@ -3,7 +3,7 @@ let text = document.getElementById('text'),
     result = document.getElementById('result'),
     encryptBtn = document.getElementById('encryptBtn'),
     decryptBtn = document.getElementById('decryptBtn'),
-    autoEncryptBtn = document.getElementById('autoEncryptBtn'),
+    autoDecryptBtn = document.getElementById('autoDecryptBtn'),
     autoText = document.getElementById('autoText'),
     autoResult = document.getElementById('autoResult'),
     autoShift = document.getElementById('autoShift'),
@@ -64,6 +64,6 @@ decryptBtn.addEventListener('click', () => {
     result.innerHTML = encryptDecrypt(text.value, -shift.value);
 });
 
-autoEncryptBtn.addEventListener('click', () => {
+autoDecryptBtn.addEventListener('click', () => {
     autoResult.innerHTML = autoEncrypt(autoText.value);
 })
